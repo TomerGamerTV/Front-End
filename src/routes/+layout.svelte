@@ -5,11 +5,11 @@
 
 		<header>
 			<a href="/" class="login-btn" id="login">כניסה באמצאות Github</a>
-			<div class="logo-container>
+			<div class="logo-container">
 
 			
 			<!-- Copyrighted material, belongs to @zvielkoren -->
-			<svg class="logo" width="100%" height="100%" viewBox="0 0 2363 2363" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+		<svg class="logo" width="100%" height="100%" viewBox="0 0 2363 2363" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
 				<rect x="-37.907" y="-0.253" width="2434.83" height="2365.32" style="fill:white;stroke:rgb(0,101,255);stroke-opacity:0;stroke-width:135.09px;"/>
 		<g transform="matrix(1.03443,0,0,0.774566,-62.2267,619.695)">
 			<rect x="60.331" y="1796.53" width="2282.66" height="323.722" style="fill:rgb(32,76,249);stroke:rgb(0,101,255);stroke-opacity:0;stroke-width:147.83px;"/>
