@@ -3,7 +3,9 @@
 
 	function prereleaseLogin(event: { preventDefault: () => void; }) {
 		event.preventDefault();
-		alert("הכפתור לא פעיל בשלב זה של הפרוייקט")
+		isLoggedIn ? logout : login;
+		alert("הכפתור לא פעיל בשלב זה של הפרוייקט");
+		return isLoggedIn;
 	}
 	let isLoggedIn = true;
 	let id = 10000000 //TODO  change to really profile
@@ -25,20 +27,21 @@
 </script>
 
 <header>
-    <button on:click={isLoggedIn ? logout : login} class="login-btn">
+	<!-- <div>
+        {#if isLoggedIn}
+            <img src={avatarUrl} alt="Profile Image" class="profile-image" on:drag={event.preventDefault()} />
+        {:else}
+            <span></span>
+        {/if}
+    </div> -->
+    <button on:click={prereleaseLogin} class="login-btn">
         {#if isLoggedIn}
             <span class="logged-in">ניתוק</span>
         {:else}
             <span>כניסה עם GitHub</span>
         {/if}
     </button>
-    <div>
-        {#if isLoggedIn}
-            <img src={avatarUrl} alt="Profile Image" class="profile-image" />
-        {:else}
-            <span></span>
-        {/if}
-    </div>
+
 	<div class="logo-container">
 
 			
