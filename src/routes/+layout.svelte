@@ -7,7 +7,7 @@
 		alert("הכפתור לא פעיל בשלב זה של הפרוייקט");
 		return isLoggedIn;
 	}
-	let isLoggedIn = true;
+	let isLoggedIn = false;
 	let id = 10000000 //TODO  change to really profile
 	let avatarUrl =`https://avatars.githubusercontent.com/u/${id}`;
 
