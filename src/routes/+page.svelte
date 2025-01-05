@@ -1,3 +1,4 @@
+
 <body>
 
 <div class="content">
@@ -19,9 +20,15 @@
     </p>
 
     <!-- קישור עם לוגו לגיט -->
-    <a href="https://github.com/il-developer" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Octicons-mark-github.svg" alt="GitHub Logo" style="width: 50px; height: 50px;"/>
-    </a>
+
+    
+    <div class="logo-container">
+        <a href="https://s.id/isrdv" target="_blank">
+          <img src="../../src/lib/assets/icon_clyde_blurple_RGB.png" alt="Discord Logo" />
+        </a>
+        <a href="https://github.com/il-developer" target="_blank">
+          <img src="../../src/lib/assets/github-mark.png" alt="GitHub Logo" />
+        </a>
 </div>
 
 </body>

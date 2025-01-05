@@ -27,13 +27,7 @@
 </script>
 
 <header>
-	<!-- <div>
-        {#if isLoggedIn}
-            <img src={avatarUrl} alt="Profile Image" class="profile-image" on:drag={event.preventDefault()} />
-        {:else}
-            <span></span>
-        {/if}
-    </div> -->
+
     <button on:click={prereleaseLogin} class="login-btn">
         {#if isLoggedIn}
             <span class="logged-in">ניתוק</span>
