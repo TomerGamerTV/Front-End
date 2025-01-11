@@ -24,10 +24,10 @@
     
     <div class="logo-container">
         <a href="https://s.id/isrdv" target="_blank">
-          <img src="https://cdn.discordapp.com/attachments/1324706681648709749/1325418184471351316/icon_clyde_blurple_RGB.png?ex=677bb760&is=677a65e0&hm=4dc242deae4b5b7a0022f901112a3339d99ae365d717af6ddc265f1d7091eba5&" alt="Discord Logo" />
+          <img src="https://cdn.discordapp.com/attachments/1324706681648709749/1325418184471351316/icon_clyde_blurple_RGB.png?ex=6783a060&is=67824ee0&hm=479ce49ff3ae265adb51b5d3e04ce5e603f5fba9ecc535b559839ebff0b79fe8&" alt="Discord Logo" />
         </a>
         <a href="https://github.com/il-developer" target="_blank">
-          <img src="https://cdn.discordapp.com/attachments/1324706681648709749/1325418184702165043/github-mark.png?ex=677bb760&is=677a65e0&hm=38fa3a04cd498a66ccde8cfc46770991112ea7fabc56ddb8c16ba34a4f06d959&" alt="GitHub Logo" />
+          <img src="https://cdn.discordapp.com/attachments/1324706681648709749/1325418184702165043/github-mark.png?ex=6783a060&is=67824ee0&hm=809af3a97125eabc6f3903890480c54ade3ebf6f6bf680cafbb917eadb6d8c72&" alt="GitHub Logo" />
         </a>
 </div>
 
