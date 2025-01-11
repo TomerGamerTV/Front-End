@@ -12,3 +12,4 @@ enabled = true
 
 [site]
 bucket = ".svelte-kit/cloudflare"
+entry-point = ".svelte-kit/cloudflare/_worker.js"
