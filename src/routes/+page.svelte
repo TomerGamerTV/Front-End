@@ -23,7 +23,7 @@
 
     
     <div class="logo-container">
-        <a href="https://s.id/isrdv" target="_blank">
+        <a href="https://discord.gg/DxysaEa5pr" target="_blank">
           <img src="https://cdn.discordapp.com/attachments/1324706681648709749/1325418184471351316/icon_clyde_blurple_RGB.png?ex=6783a060&is=67824ee0&hm=479ce49ff3ae265adb51b5d3e04ce5e603f5fba9ecc535b559839ebff0b79fe8&" alt="Discord Logo" />
         </a>
         <a href="https://github.com/il-developer" target="_blank">
