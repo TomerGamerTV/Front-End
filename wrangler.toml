@@ -5,4 +5,4 @@ compatibility_date = "2025-01-04"
 main = "workers-site/index.js"
 
 [env.production.vars]
-NODE_VERSION = "18.18.0" 
+NODE_VERSION = "18.18.0"
