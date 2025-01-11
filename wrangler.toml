@@ -9,3 +9,6 @@ assets = { directory = ".svelte-kit/cloudflare", binding = "ASSETS" }
 # Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
 [observability]
 enabled = true
+
+[site]
+bucket = ".svelte-kit/cloudflare"
