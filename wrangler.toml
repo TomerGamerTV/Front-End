@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "front-end-v2"
+name = "dev-il"
 compatibility_date = "2025-01-09"
 main = ".svelte-kit/cloudflare/_worker.js"
 assets = { directory = ".svelte-kit/cloudflare", binding = "ASSETS" }
