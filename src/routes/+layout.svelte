@@ -28,7 +28,7 @@
 
 <header>
 
-    <button on:click={prereleaseLogin} class="login-btn">
+	<button on:click={prereleaseLogin} class="login-btn">
         {#if isLoggedIn}
             <span class="logged-in">ניתוק</span>
         {:else}
