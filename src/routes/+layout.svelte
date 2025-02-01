@@ -26,11 +26,11 @@
 
 <header>
   {#if $page.data.session}
-    <!-- <img
+    <img
       src={$page.data.session.user?.image}
       class="avatar"
       alt="User Avatar"
-    /> -->
+    />
     <button onclick={signOut} class="logged-in">
       <span>ניתוק</span>
     </button>
