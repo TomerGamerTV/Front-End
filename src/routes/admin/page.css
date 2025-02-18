@@ -1,0 +1,100 @@
+:root {
+    --bg-primary: #0E2954;
+    --bg-secondary: #1A4382;
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --accent-color: #204CF9;
+    --accent-hover: #3d66fb;
+    --delete-color: #FF4136;
+    --blacklist-color: #FF6B6B;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.login-btn {
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.logo {
+    max-height: 50px;
+    filter: brightness(1.2) contrast(1.2);
+}
+
+.content {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: var(--bg-secondary);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--accent-color);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--bg-primary);
+}
+
+.action-btn {
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: var(--delete-color);
+    color: white;
+}
+
+.blacklist-btn {
+    background-color: var(--blacklist-color);
+    color: white;
+}

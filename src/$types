@@ -1,0 +1,17 @@
+// Define custom types for the Front-End project
+
+// Example: Define a type for a User
+export interface User {
+    id: number;
+    name: string;
+    email: string;
+    isActive: boolean;
+}
+
+// Example: Define a type for a Product
+export interface Product {
+    id: number;
+    name: string;
+    price: number;
+    inStock: boolean;
+}
