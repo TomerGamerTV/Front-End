@@ -16,10 +16,13 @@ export const load: ServerLoad = async (event) => {
 
 export const handle = async ({ event, resolve }) => {
   // Apply authentication middleware first
-  const response = await authHandle({ event, resolve });
+  await authHandle({ event, resolve });
 
   // Check if the user is trying to access a protected route
-  if (event.url.pathname.startsWith("/admin") || event.url.pathname.startsWith("/dashboard")) {
+  if (
+    event.url.pathname.startsWith("/admin") ||
+    event.url.pathname.startsWith("/dashboard")
+  ) {
     const userSession = await event.locals.getSession();
     if (!userSession || !userSession.user) {
       throw redirect(302, "/auth/signin");
@@ -27,5 +30,5 @@ export const handle = async ({ event, resolve }) => {
   }
 
   // Generate the response
-  return response;
+  return resolve(event);
 };
