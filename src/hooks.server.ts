@@ -30,5 +30,12 @@ export const handle = async ({ event, resolve }) => {
   }
 
   // Generate the response
-  return resolve(event);
+  const response = await resolve(event);
+
+  // Ensure the response is JSON if needed
+  if (event.url.pathname.startsWith("/api")) {
+    response.headers.set("Content-Type", "application/json");
+  }
+
+  return response;
 };
