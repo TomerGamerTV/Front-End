@@ -1,10 +1,11 @@
 <script context="module">
-  import { redirect } from "@sveltejs/kit";
+  import { fail, redirect } from "@sveltejs/kit";
+  import type { PageServerLoad } from "./$types";
 
   export const load: PageServerLoad = async (event) => {
     const session = await event.locals.auth();
 
-    if (!(session?.user?.userId?.role === "admin")) {
+    if (!(session?.user?.role === "admin")) {
       return fail(401, { type: "error", error: "Unauthenticated" });
     }
 
@@ -12,7 +13,9 @@
       session,
     };
   };
+</script>
 
+<script>
   import { onMount } from "svelte";
   import "./page.css";
 
