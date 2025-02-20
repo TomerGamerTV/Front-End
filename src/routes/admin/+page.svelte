@@ -1,19 +1,18 @@
 <script context="module">
   import { redirect } from "@sveltejs/kit";
 
-  export async function load({ locals }) {
-    const userSession = await locals.getSession();
-    if (
-      !userSession ||
-      !userSession.user ||
-      userSession.user.role !== "admin"
-    ) {
-      throw redirect(302, "/auth/signin");
-    }
-  }
-</script>
+  export const load: PageServerLoad = async (event) => {
+    const session = await event.locals.auth();
 
-<script>
+    if (!(session?.user?.userId?.role === "admin")) {
+      return fail(401, { type: "error", error: "Unauthenticated" });
+    }
+
+    return {
+      session,
+    };
+  };
+
   import { onMount } from "svelte";
   import "./page.css";
 
