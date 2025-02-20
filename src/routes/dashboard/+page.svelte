@@ -45,6 +45,10 @@
       showServiceAndProtocol = false;
     }
   }
+
+  function deleteRecord(index: number) {
+    data = data.filter((_, i) => i !== index);
+  }
 </script>
 
 <div class="content">
@@ -146,7 +150,7 @@
               <button
                 type="button"
                 class="action-btn"
-                on:click={() => data.splice(index, 1)}>Delete</button
+                on:click={() => deleteRecord(index)}>Delete</button
               >
             </td>
           </tr>
