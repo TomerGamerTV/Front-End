@@ -5,7 +5,7 @@ compatibility_date = "2025-01-04"
 main = "./.cloudflare/worker.js"
 
 routes = [
-    { pattern = "מפתח.ישראל", custom_domain = true}
+    { pattern = "xn--cebnsy.xn--4dbrk0ce", custom_domain = true}
 ]
 
 
