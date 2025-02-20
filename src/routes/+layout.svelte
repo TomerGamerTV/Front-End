@@ -26,13 +26,6 @@
 
 <header>
   {#if $page.data.session}
-    {#if $page.data.session.user?.image}
-      <img
-        src={$page.data.session.user?.image}
-        class="avatar"
-        alt="User Avatar"
-      />
-    {/if}
     <p>מחובר בתור: {@html $page.data.session.user?.name}</p>
     <button onclick={signOut} class="logged-in">
       <span>ניתוק</span>
@@ -42,7 +35,7 @@
       <span>התחברות עם GitHub</span>
     </button>
   {/if}
-  <div class="logo-container">
+  <a href="/" aria-label="MainLOGO">
     <!-- Copyrighted material, belongs to @zvielkoren -->
     <svg
       class="logo"
@@ -98,7 +91,7 @@
         <!-- Copyrighted material end -->
       </g>
     </svg>
-  </div>
+  </a>
 </header>
 
 {@render children()}
