@@ -1,6 +1,6 @@
 import { fail, redirect } from "@sveltejs/kit";
 import type { ServerLoad } from "@sveltejs/kit";
-import { handle as authHandle } from "./auth";
+import { handle as authHandle } from "./lib/auth";
 
 export const load: ServerLoad = async (event) => {
   const session = await event.locals.auth();
