@@ -27,19 +27,20 @@
 <header>
   {#if $page.data.session}
     {#if $page.data.session.user?.image}
-    <img
-    src={$page.data.session.user?.image}
-    class="avatar"
-    alt="User Avatar"
-    />
+      <img
+        src={$page.data.session.user?.image}
+        class="avatar"
+        alt="User Avatar"
+      />
+    {/if}
     <p>מחובר בתור: {@html $page.data.session.user?.name}</p>
     <button onclick={signOut} class="logged-in">
       <span>ניתוק</span>
     </button>
-{:else}
-  <button onclick={() => signIn()} class="login-btn">
-    <span>התחברות עם GitHub</span>
-  </button>
+  {:else}
+    <button onclick={() => signIn()} class="login-btn">
+      <span>התחברות עם GitHub</span>
+    </button>
   {/if}
   <div class="logo-container">
     <!-- Copyrighted material, belongs to @zvielkoren -->
