@@ -143,10 +143,10 @@
             <td>{record.value}</td>
             <td>{record.ttl}</td>
             <td>
-              <span
-                role="button"
+              <button
+                type="button"
                 class="action-btn"
-                on:click={() => data.splice(index, 1)}>Delete</span
+                on:click={() => data.splice(index, 1)}>Delete</button
               >
             </td>
           </tr>
