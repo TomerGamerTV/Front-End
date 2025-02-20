@@ -1,6 +1,5 @@
 <script lang="ts">
   import "../app.css";
-  import { SignIn, SignOut } from "@auth/sveltekit/components";
   import { page } from "$app/stores";
   import { signIn, signOut } from "@auth/sveltekit/client";
   function prereleaseLogin(event: { preventDefault: () => void }) {
@@ -35,7 +34,7 @@
       <span>ניתוק</span>
     </button>
   {:else}
-    <button onclick={signIn} class="login-btn">
+    <button onclick={() => signIn()} class="login-btn">
       <span>התחברות עם GitHub</span>
     </button>
   {/if}
