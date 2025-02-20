@@ -1,5 +1,7 @@
-export const load = async ({ locals }) => {
+import { getSession } from "@auth/sveltekit";
+
+export const load = async (event) => {
   return {
-    session: locals.auth ? await locals.auth() : null,
+    session: await getSession(event),
   };
 };
