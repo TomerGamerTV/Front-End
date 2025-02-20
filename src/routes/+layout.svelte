@@ -1,7 +1,7 @@
 <script lang="ts">
   import "../app.css";
   import { page } from "$app/stores";
-  import { signIn, signOut } from "$lib/auth"; // וודא שהפונקציות האלה קיימות במערכת שלך
+  import { signIn, signOut } from "@auth/sveltekit/client";
 
   function prereleaseLogin(event: { preventDefault: () => void }) {
     event.preventDefault();
