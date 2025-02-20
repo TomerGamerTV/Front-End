@@ -1,7 +1,8 @@
 <script lang="ts">
   import "../app.css";
   import { page } from "$app/stores";
-  import { signIn, signOut } from "@auth/sveltekit/client";
+  import { signIn, signOut } from "$lib/auth"; // וודא שהפונקציות האלה קיימות במערכת שלך
+
   function prereleaseLogin(event: { preventDefault: () => void }) {
     event.preventDefault();
     isLoggedIn ? logout : login;
@@ -25,20 +26,17 @@
 
 <header>
   {#if $page.data.session}
-    <img
-      src={$page.data.session.user?.image}
-      class="avatar"
-      alt="User Avatar"
-    />
-    <button onclick={signOut} class="logged-in">
-      <span>ניתוק</span>
-    </button>
+    {#if $page.data.session.user?.image}
+      <img
+        src={$page.data.session.user.image}
+        class="avatar"
+        alt="User Avatar"
+      />
+    {/if}
+    <button onclick={() => signOut()}>ניתוק</button>
   {:else}
-    <button onclick={() => signIn()} class="login-btn">
-      <span>התחברות עם GitHub</span>
-    </button>
+    <button onclick={() => signIn()}>התחברות עם GitHub</button>
   {/if}
-
   <div class="logo-container">
     <!-- Copyrighted material, belongs to @zvielkoren -->
     <svg
