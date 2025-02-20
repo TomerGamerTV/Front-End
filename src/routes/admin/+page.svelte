@@ -1,7 +1,7 @@
 <script context="module">
   import { redirect } from "@sveltejs/kit";
 
-  export async function load({ locals }: { locals: any }) {
+  export async function load({ locals }) {
     const userSession = await locals.getSession();
     if (
       !userSession ||
