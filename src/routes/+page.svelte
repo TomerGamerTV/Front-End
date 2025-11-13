@@ -53,7 +53,7 @@ body {
 .content {
   max-width: 700px;
   margin: 3rem auto;
-  background: #0e2954;
+  background: #1a4382;
   padding: 2rem 2.5rem;
   border-radius: 1.5rem;
   box-shadow: 0 6px 40px 0 rgba(30, 34, 90, 0.18);
