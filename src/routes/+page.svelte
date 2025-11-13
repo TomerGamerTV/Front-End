@@ -44,34 +44,4 @@
   </div>
 </body>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f7f7fb;
-}
-.content {
-  max-width: 700px;
-  margin: 3rem auto;
-  background: #1a4382;
-  padding: 2rem 2.5rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 6px 40px 0 rgba(30, 34, 90, 0.18);
-  direction: rtl;
-  text-align: right;
-}
-h1 {
-  font-size: 2.3rem;
-  margin-bottom: 1rem;
-  color: #e0e0e0;
-}
-strong {
-  display: block;
-  margin: 1.5rem 0 0.5rem 0;
-  font-size: 1.25em;
-  color: #e0e0e0;
-}
-.logo-container a:hover svg {
-  filter: brightness(0.7);
-}
-</style>
+
