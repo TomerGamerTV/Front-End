@@ -18,7 +18,7 @@
     <p>
         כדי להבטיח חוויית שימוש מהירה ובטוחה, מפתח.ישראל מתארח על גבי תשתית Cloudflare, המובילה בתחום האצת אתרים ואבטחתם. כל ישראלי יכול להתחבר למערכת, לבחור תת-דומיין פנוי, ולהגדיר אותו לפי צרכיו האישיים – בין אם להפניית תעבורה לשרת קיים או לאירוח פרויקט סטטי. השירות מיועד לכלל קהילת המפתחים בארץ, ומעודד שיתוף פעולה, שיפור הדומיין, והפיכתו לכלי עזר מרכזי בקהילה הישראלית.
     </p>
-<iframe src="https://discordapp.com/widget?id=1324706681648709746&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+<iframe src="https://discordapp.com/widget?id=1324706681648709746" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     <!-- קישור עם לוגו לגיט -->
 
 
