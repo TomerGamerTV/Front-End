@@ -1,26 +1,37 @@
+<!--
+  +page.svelte - מפתח.ישראל דף הבית
+  עברית RTL: טקסט, כפתורים וסמלים בשפה העברית
+-->
 
 <body>
+  <div class="content" dir="rtl">
+    <h1>מפתח.ישראל</h1>
 
-<div class="content">
-        <h1>מפתח.ישראל</h1>
-
-        <strong>מפתח.ישראל – דומיין פתוח לקהילת המפתחים בישראל</strong>
+    <strong>מפתח.ישראל – דומיין פתוח לקהילת המפתחים בישראל</strong>
     <p>
-        מפתח.ישראל הוא דומיין ייחודי המיועד במיוחד עבור קהילת המפתחים הישראלית. הדומיין מאפשר לכל ישראלי להקים תת-דומיין ייחודי משלו, ללא עלות, ולשמש כבית דיגיטלי לפרויקטים אישיים, אתרי קוד פתוח, בלוגים טכנולוגיים, או כל מיזם יצירתי אחר. הרעיון נולד מתוך הרצון להעניק למפתחים בישראל פלטפורמה פשוטה ונגישה להצגת עבודותיהם, תוך שיתוף בידע ועידוד שיתופי פעולה בקהילה.
+      מפתח.ישראל הוא דומיין ייחודי המיועד במיוחד עבור קהילת המפתחים הישראלית. הדומיין מאפשר לכל ישראלי להקים תשתית דיגיטלית ולחלוק תכנים, כלים ופרויקטי קוד פתוח עם הקהילה במקום מרכזי אחד.
     </p>
 
     <strong>קוד פתוח ונגישות מלאה</strong>
     <p>
-        המערכת שמאחורי מפתח.ישראל פועלת בקוד פתוח, מה שמאפשר לכל אחד ללמוד כיצד המערכת פועלת, להשתתף בפיתוחה ולשפר אותה. בעזרת שקיפות מלאה ותמיכה מהקהילה, אנו שואפים ליצור מרחב דיגיטלי שתומך במפתחים מכל הרמות – ממתחילים ועד מקצוענים מנוסים. הפרויקט נבנה מתוך ערכי קוד פתוח, במטרה להבטיח שכל אחד יכול לתרום, להתאים ולשפר את המערכת, תוך שמירה על פשטות ושימושיות.
+      המערכת שמאחורי מפתח.ישראל פועלת בקוד פתוח, מה שמאפשר לכל אחד ללמוד כיצד המערכת פועלת, להשתתף בפיתוחה ולשפר אותה יחד עם קהילת המפתחים.
     </p>
 
     <strong>זמין לכל ישראלי על גבי Cloudflare</strong>
     <p>
-        כדי להבטיח חוויית שימוש מהירה ובטוחה, מפתח.ישראל מתארח על גבי תשתית Cloudflare, המובילה בתחום האצת אתרים ואבטחתם. כל ישראלי יכול להתחבר למערכת, לבחור תת-דומיין פנוי, ולהגדיר אותו לפי צרכיו האישיים – בין אם להפניית תעבורה לשרת קיים או לאירוח פרויקט סטטי. השירות מיועד לכלל קהילת המפתחים בארץ, ומעודד שיתוף פעולה, שיפור הדומיין, והפיכתו לכלי עזר מרכזי בקהילה הישראלית.
+      כדי להבטיח חוויית שימוש מהירה ובטוחה, מפתח.ישראל מתארח על גבי תשתית Cloudflare, המובילה בתחום האצת אתרים ואבטחתם בעולם.
     </p>
-<iframe src="https://discordapp.com/widget?id=1324706681648709746" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    <!-- קישור עם לוגו לגיט -->
 
+    <iframe 
+      src="https://discordapp.com/widget?id=1324706681648709746" 
+      width="350" 
+      height="500" 
+      allowtransparency="true" 
+      frameborder="0" 
+      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+      style="margin: 1rem 0; display: block;"
+    >
+    </iframe>
 
     <div class="logo-container">
     <a href="https://discord.gg/DxysaEa5pr" target="_blank" aria-label="Discord">
@@ -30,6 +41,37 @@
 
     </a>
     </div>
-</div>
-
+  </div>
 </body>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7fb;
+}
+.content {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: #0e2954;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 40px 0 rgba(30, 34, 90, 0.18);
+  direction: rtl;
+  text-align: right;
+}
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+strong {
+  display: block;
+  margin: 1.5rem 0 0.5rem 0;
+  font-size: 1.25em;
+  color: #e0e0e0;
+}
+.logo-container a:hover svg {
+  filter: brightness(0.7);
+}
+</style>
