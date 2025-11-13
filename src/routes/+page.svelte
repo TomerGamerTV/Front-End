@@ -22,16 +22,16 @@
       כדי להבטיח חוויית שימוש מהירה ובטוחה, מפתח.ישראל מתארח על גבי תשתית Cloudflare, המובילה בתחום האצת אתרים ואבטחתם בעולם.
     </p>
 
-    <iframe 
-      src="https://discordapp.com/widget?id=1324706681648709746" 
-      width="350" 
-      height="500" 
-      allowtransparency="true" 
-      frameborder="0" 
-      sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-      style="margin: 1rem 0; display: block;"
-    >
-    </iframe>
+<iframe
+  src="https://discordapp.com/widget?id=1324706681648709746"
+  width="350"
+  height="500"
+  title="Discord server widget"
+  allowtransparency="true"
+  frameborder="0"
+  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+  style="margin: 1rem 0; display: block;"
+></iframe>
 
     <div class="logo-container">
     <a href="https://discord.gg/DxysaEa5pr" target="_blank" aria-label="Discord">
