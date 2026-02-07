@@ -2,16 +2,14 @@
 name = "dev-il"
 # pages_build_output_dir = ".svelte-kit/cloudflare"
 compatibility_date = "2025-01-04"
-
-main = ".svelte-kit/cloudflare/worker.js"
-
+main = "./.cloudflare/worker.js"
 
 routes = [
     { pattern = "xn--cebnsy.xn--4dbrk0ce", custom_domain = true}
 ]
 
-[assets]
-directory = ".svelte-kit/output/client"
+
+site.bucket = "./.cloudflare/public"
 
 build.command = "npm run build"
 
